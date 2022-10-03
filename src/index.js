@@ -19,5 +19,6 @@ const config = {
 
 consumer.connect(config)
     .then(client => client.listen(data => {
-    console.log(data)
-}))
+        // Do whatever you want with the data
+        console.log(data)
+    }))

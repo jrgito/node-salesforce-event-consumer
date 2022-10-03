@@ -40,24 +40,32 @@ Once it receives an event, it will display it like this:
 
 ```
 {
-  schema: '_pKsngZBRPGolkyMwChsPg',
-  payload: {
-    LastModifiedDate: '2022-09-30T12:20:36Z',
-    CC_Incident_Reason__c: 'test',
-    ChangeEventHeader: {
-      commitNumber: 677256159545,
-      commitUser: '0052o0000091d7YAAQ',
-      sequenceNumber: 1,
-      entityName: 'Account',
-      changeType: 'UPDATE',
-      changedFields: [Array],
-      changeOrigin: 'com/salesforce/api/soap/55.0;client=SfdcInternalAPI/',
-      transactionKey: '0006554b-b261-1c53-0bf5-12b11e4a8020',
-      commitTimestamp: 1664540436000,
-      recordIds: [Array]
-    }
-  },
-  event: { replayId: 7066634 }
+  "schema": "IeRuaY6cbI_HsV8Rv1Mc5g", 
+  "payload": {
+    "ChangeEventHeader": {
+      "entityName": "Account", 
+      "recordIds": [
+        "<record_ID>"
+      ], 
+      "changeType": "CREATE", 
+      "changeOrigin": "com/salesforce/api/soap/51.0;client=SfdcInternalAPI/", 
+      "transactionKey": "0002343d-9d90-e395-ed20-cf416ba652ad", 
+      "sequenceNumber": 1, 
+      "commitTimestamp": 1612912679000, 
+      "commitNumber": 10716283339728, 
+      "commitUser": "<User_ID>"
+    }, 
+    "Name": "Acme", 
+    "Description": "Everyone is talking about the cloud. But what does it mean?", 
+    "OwnerId": "<Owner_ID>", 
+    "CreatedDate": "2021-02-09T23:17:59Z", 
+    "CreatedById": "<User_ID>", 
+    "LastModifiedDate": "2021-02-09T23:17:59Z", 
+    "LastModifiedById": "<User_ID>"
+  }, 
+  "event": {
+    "replayId": 6
+  }
 }
 
 ```
